@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* LIGHT MODE COLORS (Refined: Off-White/Charcoal/Emerald) */
+    --background: 150 9% 97%;
+    /* #F7F9F8 */
+    --foreground: 168 21% 14%;
+    /* #1C2B28 (Dark Charcoal) */
+
+    --primary: 165 59% 30%;
+    /* #1F7A63 (Emerald Green) */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 47% 57%;
+    /* #C6A75E (Muted Gold) */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 9% 94%;
+    /* Slightly darker than bg */
+    --muted-foreground: 162 7% 47%;
+    /* #6F7F7A (Muted Gray-Green) */
+
+    --accent: 165 59% 30%;
+    /* #1F7A63 (Match Primary for accents) */
+    --accent-foreground: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    /* #FFFFFF */
+    --card-foreground: 168 21% 14%;
+    /* Match foreground */
+
+    --border: 162 7% 90%;
+    /* Soft border derived from palette */
+    --input: 162 7% 90%;
+    --ring: 165 59% 30%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* DARK MODE COLORS (High Contrast: Black BG / Dark Cards) */
+    --background: 0 0% 0%;
+    /* #000000 */
+    --foreground: 0 0% 100%;
+    /* #FFFFFF (Text on Black) */
+
+    --primary: 45 93% 47%;
+    /* Gold/Yellow #facc15 */
+    --primary-foreground: 0 0% 0%;
+    /* Black Text on Gold */
+
+    --secondary: 42 47% 57%;
+    /* #C6A75E (Muted Gold) */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;
+    /* Dark Gray for neutral areas */
+    --muted-foreground: 0 0% 60%;
+    /* Dimmed white text */
+
+    --accent: 45 93% 47%;
+    /* Match Primary */
+    --accent-foreground: 0 0% 0%;
+
+    --card: 0 0% 9%;
+    /* Dark Gray Cards #171717 */
+    --card-foreground: 0 0% 100%;
+    /* White Text on Cards */
+
+    --border: 0 0% 20%;
+    /* Dark Border */
+    --input: 0 0% 20%;
+    --ring: 45 93% 47%;
+    /* Gold Ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-primary font-bold;
+  }
+}
