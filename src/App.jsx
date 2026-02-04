@@ -6,6 +6,8 @@ import About from './pages/About';
 import PodcastLibrary from './pages/PodcastLibrary';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import RamzanRevival from './pages/RamzanRevival';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/podcast-library" element={<PodcastLibrary />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/courses/ramzan-revival" element={<RamzanRevival />} />
+            <Route path="/courses/under-development" element={<ComingSoon />} />
           </Routes>
         </Layout>
       </Router>

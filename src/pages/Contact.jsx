@@ -23,28 +23,30 @@ export default function Contact() {
         setIsSubmitting(true);
         setStatus({ type: '', message: '' });
 
-        // Create mailto link with form data
+        // Create Gmail compose link with form data
         const subject = encodeURIComponent(formData.subject || 'Contact Form Submission');
         const body = encodeURIComponent(
             `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
         );
-        const mailtoLink = `mailto:drabdulqadeerahmad18@gmail.com?subject=${subject}&body=${body}`;
 
-        // Open default email client
-        window.location.href = mailtoLink;
+        // Gmail specific compose URL
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=drabdulqadeerahmad18@gmail.com&su=${subject}&body=${body}`;
+
+        // Open Gmail in a new tab
+        window.open(gmailUrl, '_blank');
 
         // Show success message
         setStatus({
             type: 'success',
-            message: 'Email client opened! Please send the email from your email application.'
+            message: 'Gmail opened! Please hit send in the new tab to complete your message.'
         });
 
-        // Reset form
+        // Reset form after a delay
         setTimeout(() => {
             setFormData({ name: '', email: '', subject: '', message: '' });
             setIsSubmitting(false);
             setStatus({ type: '', message: '' });
-        }, 3000);
+        }, 5000);
     };
 
     return (
@@ -99,8 +101,8 @@ export default function Contact() {
 
                         {status.message && (
                             <div className={`mb-4 rounded-md p-4 ${status.type === 'success'
-                                    ? 'bg-green-500/10 text-green-500 border border-green-500/20'
-                                    : 'bg-red-500/10 text-red-500 border border-red-500/20'
+                                ? 'bg-green-500/10 text-green-500 border border-green-500/20'
+                                : 'bg-red-500/10 text-red-500 border border-red-500/20'
                                 }`}>
                                 {status.message}
                             </div>

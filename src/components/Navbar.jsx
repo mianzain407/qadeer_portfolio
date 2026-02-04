@@ -13,11 +13,12 @@ export default function Navbar() {
             name: 'Courses',
             path: '#',
             dropdown: [
-                { name: 'Arabic Language', path: '/courses/arabic' },
-                { name: 'STEM Courses', path: '/courses/stem' },
-                { name: 'Skills & Development', path: '/courses/skills' },
-                { name: 'Islamic Foundation', path: '/courses/islamic' },
-                { name: 'Advance Courses', path: '/courses/advance' },
+                { name: 'Ramzan Revival Program', path: '/courses/ramzan-revival' },
+                { name: 'Arabic Language', path: '/courses/under-development' },
+                { name: 'STEM Courses', path: '/courses/under-development' },
+                { name: 'Skills & Development', path: '/courses/under-development' },
+                { name: 'Islamic Foundation', path: '/courses/under-development' },
+                { name: 'Advance Courses', path: '/courses/under-development' },
             ]
         },
         {
