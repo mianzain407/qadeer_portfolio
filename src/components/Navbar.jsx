@@ -14,6 +14,7 @@ export default function Navbar() {
             path: '#',
             dropdown: [
                 { name: 'Ramzan Revival Program', path: '/courses/ramzan-revival' },
+                { name: 'PHYSIOTHERAPY CONSULTATION', path: '/courses/physiotherapy-consultation' },
                 { name: 'Arabic Language', path: '/courses/under-development' },
                 { name: 'STEM Courses', path: '/courses/under-development' },
                 { name: 'Skills & Development', path: '/courses/under-development' },
