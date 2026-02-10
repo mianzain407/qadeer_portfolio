@@ -1,4 +1,4 @@
-import { Facebook, Youtube, Linkedin, MessageCircle, Instagram } from 'lucide-react';
+import { Facebook, Youtube, Linkedin, MessageCircle, Instagram, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -38,6 +38,17 @@ export default function Footer() {
                             <a href="https://wa.me/923224426531" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><MessageCircle className="h-5 w-5" /></a>
                             <a href="https://www.linkedin.com/in/dr-abdul-qadeer-ahmad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-5 w-5" /></a>
                             <a href="https://youtube.com/@drabdulqadeerahmadofficial?si=_9GbweFb_aesday7" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Youtube className="h-5 w-5" /></a>
+                        </div>
+                        <div className="mt-6">
+                            <a
+                                href="https://chat.whatsapp.com/HR1NXT8XkX4BN6buNI4VE3"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#25D366] text-white font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#25D366]/40"
+                            >
+                                <Users className="h-5 w-5" />
+                                <span>Join Community (MIC)</span>
+                            </a>
                         </div>
                     </div>
                 </div>

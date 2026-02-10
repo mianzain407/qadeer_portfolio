@@ -14,12 +14,13 @@ export default function Navbar() {
             path: '#',
             dropdown: [
                 { name: 'Ramzan Revival Program', path: '/courses/ramzan-revival' },
-                { name: 'PHYSIOTHERAPY CONSULTATION', path: '/courses/physiotherapy-consultation' },
+                { name: 'Physiotherapy Consultation', path: '/courses/physiotherapy-consultation' },
+                { name: 'Mentorship & Counseling', path: '/courses/mentorship' },
                 { name: 'Arabic Language', path: '/courses/under-development' },
-                { name: 'STEM Courses', path: '/courses/under-development' },
+                { name: 'Islamic Courses', path: '/courses/under-development' },
                 { name: 'Skills & Development', path: '/courses/under-development' },
-                { name: 'Islamic Foundation', path: '/courses/under-development' },
-                { name: 'Advance Courses', path: '/courses/under-development' },
+                { name: 'Computer Courses', path: '/courses/under-development' },
+                { name: 'Medical Courses', path: '/courses/under-development' },
             ]
         },
         {
@@ -57,7 +58,7 @@ export default function Navbar() {
                                         <div className="grid gap-1">
                                             {link.dropdown.map((subItem) => (
                                                 <Link
-                                                    key={subItem.path}
+                                                    key={subItem.name}
                                                     to={subItem.path}
                                                     className="block rounded-sm px-3 py-2 text-sm font-medium text-popover-foreground hover:bg-accent hover:text-accent-foreground"
                                                 >
@@ -112,7 +113,7 @@ export default function Navbar() {
                                     <div className="pl-6 space-y-1">
                                         {link.dropdown.map((subItem) => (
                                             <Link
-                                                key={subItem.path}
+                                                key={subItem.name}
                                                 to={subItem.path}
                                                 className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                                                 onClick={() => setIsOpen(false)}

@@ -1,4 +1,5 @@
 import { Facebook, Linkedin, Youtube, Instagram, Twitter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
     const expertise = [
@@ -93,8 +94,8 @@ export default function About() {
                 <div className="text-center space-y-12">
                     <div className="space-y-2">
                         <h3 className="text-primary font-bold tracking-widest uppercase">Expertise</h3>
-                        <h2 className="text-3xl md:text-5xl font-bold text-white uppercase leading-tight">
-                            Dr. Abdul Qadeer's Proven<br /><span className="text-white">In Various Topics</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-muted-foreground uppercase leading-tight">
+                            Dr. Abdul Qadeer's Proven<br /><span className="text-muted-foreground">In Various Topics</span>
                         </h2>
                     </div>
 
@@ -118,32 +119,34 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <GalleryItem
-                            src="/images/gallery1.jpg"
+                            src="/images/mn2.jpeg"
                             alt="Consultation Session"
                             caption="Healthcare Consultation"
                         />
                         <GalleryItem
-                            src="/images/gallery2.jpg"
+                            src="/images/teaching.jpeg"
                             alt="Teaching Session"
                             caption="Academic Teaching"
                         />
                         <GalleryItem
-                            src="/images/gallery3.jpg"
+                            src="/images/publicspeaking.jpeg"
                             alt="Public Speaking"
                             caption="Public Speaking"
                         />
                         <GalleryItem
-                            src="/images/gallery4.jpg"
+                            src="/images/physio2.jpeg"
                             alt="Physiotherapy Session"
                             caption="Rehabilitation Therapy"
                         />
+                        <Link to="/courses/mentorship">
+                            <GalleryItem
+                                src="/images/aboutmntrship.jpeg"
+                                alt="Mentorship Program"
+                                caption="Youth Mentorship"
+                            />
+                        </Link>
                         <GalleryItem
-                            src="/images/gallery5.jpg"
-                            alt="Mentorship Program"
-                            caption="Youth Mentorship"
-                        />
-                        <GalleryItem
-                            src="/images/gallery6.jpg"
+                            src="/images/aboutresaerchwork.jpeg"
                             alt="Research Work"
                             caption="Academic Research"
                         />

@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import RamzanRevival from './pages/RamzanRevival';
 import ComingSoon from './pages/ComingSoon';
 import PhysioConsultation from './pages/PhysioConsultation';
+import MentorshipCounseling from './pages/MentorshipCounseling';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/courses/ramzan-revival" element={<RamzanRevival />} />
             <Route path="/courses/physiotherapy-consultation" element={<PhysioConsultation />} />
+            <Route path="/courses/mentorship" element={<MentorshipCounseling />} />
             <Route path="/courses/under-development" element={<ComingSoon />} />
           </Routes>
         </Layout>

@@ -46,9 +46,9 @@ export default function PhysioConsultation() {
                     </div>
 
                     <div className="relative">
-                        <div className="aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl relative group">
+                        <div className="aspect-[2/3] rounded-2xl overflow-hidden border border-primary/20 shadow-2xl relative group">
                             <img
-                                src="/images/physio.jpeg"
+                                src="/images/physio1.jpeg"
                                 alt="Physiotherapy Assessment"
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                             />
@@ -169,7 +169,7 @@ export default function PhysioConsultation() {
                 <section className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="order-2 lg:order-1 relative">
                         <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
-                            <img src="/images/physio-approach.jpg" alt="Structured Treatment" className="w-full h-full object-cover" />
+                            <img src="/images/physio2.jpeg" alt="Structured Treatment" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div className="order-1 lg:order-2 space-y-12">
